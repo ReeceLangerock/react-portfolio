@@ -1,0 +1,9 @@
+.portfolio__container {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+}
+
+.portfolio__item {
+  margin:20px;
+}
