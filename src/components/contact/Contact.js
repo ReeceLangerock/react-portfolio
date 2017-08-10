@@ -1,11 +1,16 @@
 import React from "react";
+import ContactItem from './ContactItem'
 
 export class Contact extends React.Component {
   render() {
     return (
       <section id="section-contact">
         <div className ="">
-          <h1>Contact</h1>
+          <ContactItem svgName = "linkedin"/>
+          <ContactItem svgName = "email"/>
+          <ContactItem svgName = "github"/>
+
+
 
         </div>
       </section>

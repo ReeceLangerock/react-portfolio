@@ -4,11 +4,16 @@ export class PortfolioItem extends React.Component {
   constructor(props){
     super(props);
   }
+  renderBuiltWith(){
+    return this.props.itemInfo['built-with'].map((item) => <h5>{item}</h5>)
+  }
   render() {
 
     return (
-        <div id = {`portfolio-item-${this.props.projectName}`} className ="">
-          <h1>portfolio Item</h1>
+        <div  id = {`portfolio-item-${this.props.itemName}`} className ="portfolio__item">
+          <h1>{this.props.itemName}</h1>
+          {this.renderBuiltWith()}
+          <img src = "#"/>
 
         </div>
     );
