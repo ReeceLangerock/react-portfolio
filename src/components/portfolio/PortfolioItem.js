@@ -5,7 +5,7 @@ export class PortfolioItem extends React.Component {
     super(props);
   }
   renderBuiltWith(){
-    return this.props.itemInfo['built-with'].map((item) => <h5>{item}</h5>)
+    return this.props.itemInfo['built-with'].map((item, index) => <h5 key= {index} >{item}</h5>)
   }
   render() {
 

@@ -1,8 +1,11 @@
-import React from "react";
+import React from "react";  
+import { Link, NavLink } from 'react-router-dom'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import ReactDOM from 'react-dom'
 
 class Navigation extends React.Component {
+
   render() {
     return (
       <header>
@@ -16,16 +19,11 @@ class Navigation extends React.Component {
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <Nav >
-              <a href ="#profile">Profile</a>
-              <a href ="#test">Test</a>
-              <a href ="#test">Test</a>
-            </Nav>
             <Nav pullRight>
-              <LinkContainer to="/draftboard">
-              <NavItem eventKey={1} >Draftboard</NavItem>
-            </LinkContainer>
-
+    <a href ="#about">About</a>
+              <a href ="#profile">Profile</a>
+              <a href ="#contact">Contact</a>
+          
             </Nav>
           </Navbar.Collapse>
         </Navbar>

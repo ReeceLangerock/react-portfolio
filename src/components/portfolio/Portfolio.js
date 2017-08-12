@@ -10,11 +10,12 @@ export class Portfolio extends React.Component {
   }
   render() {
     return (
-      <section id="section-portfolio">
+      <section id="portfolio">
         <h1>Portfolio</h1>
         
         <div className="portfolio__container">
           {this.renderPortfolioItems()}
+        
         </div>
       </section>
     );

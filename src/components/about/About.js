@@ -5,7 +5,7 @@ export class About extends React.Component {
     const currentYear = new Date().getFullYear();
 
     return (
-      <section id="section-about">
+      <section id="about">
         <div className ="">
           <h1>About</h1>
 

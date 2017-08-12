@@ -1,0 +1,17 @@
+.contact__icon-container {
+  display: flex;
+    justify-content: center;
+
+}
+.contact__icon {
+  margin:5px;
+}
+
+.contact__icon > img {
+  width:50px;
+}
+
+
+.contact__icon > img:hover {
+  fill: blue;
+}

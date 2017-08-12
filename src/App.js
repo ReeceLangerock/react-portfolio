@@ -22,6 +22,8 @@ class App extends Component {
           <Portfolio />
           <Contact />
           <Footer />
+      
+          
 
         </div>
       </BrowserRouter>
