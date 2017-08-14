@@ -5,6 +5,7 @@
 }
 .contact__icon {
   margin:5px;
+  cursor: pointer;
 }
 
 .contact__icon > img {
