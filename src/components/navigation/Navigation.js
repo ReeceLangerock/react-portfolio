@@ -1,30 +1,31 @@
-import React from "react";  
-import { Link, NavLink } from 'react-router-dom'
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import ReactDOM from 'react-dom'
+import ReactDOM from "react-dom";
 
 class Navigation extends React.Component {
-
   render() {
     return (
       <header>
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
-            <LinkContainer to="/">
-              <Navbar.Brand>
-                Mansion Men
-              </Navbar.Brand>
-            </LinkContainer>
+
+            <Navbar.Brand>
+              rlangerock
+            </Navbar.Brand>
+
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <Nav pullRight>
-    <a href ="#about">About</a>
-              <a href ="#profile">Profile</a>
-              <a href ="#contact">Contact</a>
-          
-            </Nav>
+            <div style={{float:'right'}}>
+              <a href="#about">About</a>
+              <a href="#skills">Skills</a>
+
+              <a href="#profile">Profile</a>
+              <a href="#contact">Contact</a>
+
+            </div>
           </Navbar.Collapse>
         </Navbar>
       </header>

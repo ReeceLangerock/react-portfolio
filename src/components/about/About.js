@@ -8,6 +8,10 @@ export class About extends React.Component {
       <section id="about">
         <div className ="">
           <h1>About</h1>
+          <h1>About</h1>
+          <h1>About</h1>
+          <h1>About</h1>
+          <h1>About</h1>
 
         </div>
       </section>
