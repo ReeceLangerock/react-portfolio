@@ -11,5 +11,29 @@
     "link": "#",
     "date-completed": "",
     "built-with": ["Expressjs", "MongoDB", "React"]
+  }, "Fantasy League Webpage": {
+    "description": "",
+    "github": "#",
+    "link": "#",
+    "date-completed": "",
+    "built-with": ["React", "Redux", "D3"]
+  }, "Voting Application": {
+    "description": "",
+    "github": "#",
+    "link": "#",
+    "date-completed": "",
+    "built-with": ["React", "Redux", "D3"]
+  }, "Pinterest Clone": {
+    "description": "",
+    "github": "#",
+    "link": "#",
+    "date-completed": "",
+    "built-with": ["React", "Redux", "D3"]
+  }, "Book Trading App": {
+    "description": "",
+    "github": "#",
+    "link": "#",
+    "date-completed": "",
+    "built-with": ["React", "Redux", "D3"]
   }
 }
