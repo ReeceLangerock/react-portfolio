@@ -1,8 +1,8 @@
 .navigation {
 
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
 
 }
 
@@ -10,7 +10,7 @@
 .navigation__menu {
 display: flex;
     margin-right: 7px;
-    font-size: 3rem;
+    font-size: 2rem;
           text-shadow: 1px 1px black;
           cursor: pointer;
     
@@ -44,7 +44,7 @@ display: none
     align-items: center;
     display: flex;
     padding: 0 7px 0 7px;
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
           text-shadow: 1px 1px black;
     text-decoration: none;
@@ -55,7 +55,7 @@ display: none
 
 .navigation__bars {
     margin-left: 7px;
-    font-size: 3rem;
+    font-size: 2rem;
           text-shadow: 1px 1px black;
           cursor: pointer;
     
@@ -82,4 +82,26 @@ align-items: stretch;
 .navigation__container:hover {
    
     
+}
+
+.logo {
+     position: fixed;
+    top: 30px;
+    left: 30px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+          text-shadow: 1px 1px black;
+
+}
+
+.contact {
+    display: flex;
+     position: fixed;
+    bottom: 30px;
+    left: 30px;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px black;
+
 }
