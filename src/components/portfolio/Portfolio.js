@@ -10,7 +10,7 @@ export class Portfolio extends React.Component {
   render() {
     return (
       <section id="portfolio">
-        <div className="row">
+        <div className="">
           <div className="portfolio__container">
 
             <div className="container">

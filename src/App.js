@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-<Navigation />
+          <Navigation />
                     
           <Hero />
           <About />
