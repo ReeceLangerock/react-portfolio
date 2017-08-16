@@ -2,9 +2,7 @@ import React from "react";
 import "./../../style/portfolio.css"
 
 export class PortfolioItem extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+
   renderBuiltWith() {
 
     return this.props.itemInfo["built-with"].map((item, index) => (

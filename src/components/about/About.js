@@ -2,7 +2,6 @@ import React from "react";
 
 export class About extends React.Component {
   render() {
-    const currentYear = new Date().getFullYear();
 
     return (
       <section id="about">
