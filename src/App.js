@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 
 //import components
-import Navigation from "./components/navigation/Navigation";
+import Navigation from "./components/navigation/FloatingNavigation";
 import Hero from "./components/hero/Hero";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
@@ -15,7 +15,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Navigation />
+<Navigation />
+                    
           <Hero />
           <About />
           <Portfolio />
