@@ -1,40 +1,37 @@
 import React from "react";
 
-import { Navbar, Nav,NavDropdown, MenuItem } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, MenuItem } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import "./../../style/navigation.css"
-import NavItem from './NavItem';
+import "./../../style/navigation.css";
+import NavItem from "./NavItem";
 import ReactDOM from "react-dom";
 
 class Navigation extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
   }
 
-
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-}
+    window.addEventListener("scroll", this.handleScroll);
+  }
 
-componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-}
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
 
-handleScroll(event) {
+  handleScroll(event) {
     let scrollTop = event.srcElement.body.scrollTop;
-    if(scrollTop > 52.2){
-      document.getElementById('test').classList.add('fixed');
+    if (scrollTop > 52.2) {
+      document.getElementById("test").classList.add("fixed");
     } else {
-      document.getElementById('test').classList.remove('fixed');
+      document.getElementById("test").classList.remove("fixed");
     }
-  console.log(scrollTop);
-  
-   
-}
+    console.log(scrollTop);
+  }
   render() {
     return (
-      <header className ="" id="test">
+      <header className="" id="test">
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
 
@@ -45,12 +42,12 @@ handleScroll(event) {
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <div className = "navigation__link-container">
-             
-              <NavItem url="#about" linkName= "About"/>
-              <NavItem url="#skills" linkName ="Skills"/>
-              <NavItem url="#profile" linkName ="Profile"/>
-              <NavItem url="#contact" linkName ="Contact"/>
+            <div className="navigation__link-container">
+
+              <NavItem url="#about" linkName="About" />
+              <NavItem url="#skills" linkName="Skills" />
+              <NavItem url="#profile" linkName="Profile" />
+              <NavItem url="#contact" linkName="Contact" />
 
             </div>
           </Navbar.Collapse>
