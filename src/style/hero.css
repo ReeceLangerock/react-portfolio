@@ -1,3 +1,48 @@
+/*FRONT RUNNERS */
+
+@font-face {
+  font-family: 'blackthorns';
+  src: url('./../assets/fonts/blackthorns.ttf');
+}
+
+@font-face {
+  font-family: 'tesla';
+  src: url('./../assets/fonts/TESLA.ttf');
+}
+
+@font-face {
+  font-family: 'Wildwood-Italic';
+  src: url('./../assets/fonts/Wildwood-Italic.otf');
+}
+
+/* MAYBE */
+
+@font-face {
+  font-family: 'Blacksword';
+  src: url('./../assets/fonts/Blacksword.otf');
+}
+
+@font-face {
+  font-family: 'Brown Fox';
+  src: url('./../assets/fonts/Brown Fox.ttf');
+}
+@font-face {
+  font-family: 'Dead Stock';
+  src: url('./../assets/fonts/Dead Stock.ttf');
+}
+
+
+
+@font-face {
+  font-family: 'AVENGEANCE';
+  src: url('./../assets/fonts/AVENGEANCE.ttf');
+}
+
+
+
+
+
+
 .hero {
     background-image: url("./../assets/images/hero2.jpg");
 
@@ -14,6 +59,7 @@
     padding: 0px;
     font-size: 10rem;
       text-shadow: 3px 3px black;
+      font-family: 'blackthorns';
 
     
     
@@ -23,7 +69,8 @@
     padding: 0px;
     font-size: 5rem;  
       text-shadow: 3px 3px black;
-    
+      font-family: 'blackthorns';
+        
 
     
     
