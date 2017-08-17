@@ -8,6 +8,7 @@ import Hero from "./components/hero/Hero";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
 import Footer from "./components/footer/Footer";
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
                     
           <Hero />
           <About />
+          <Skills />
           <Portfolio />
           <Contact />
           <Footer />

@@ -12,6 +12,7 @@ export class About extends React.Component {
           <h1>About</h1>
           <h1>About</h1>
           <h1>About</h1>
+   
 
         </div>
       </section>
