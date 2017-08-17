@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import store, { history } from "./store/store";
+
 
 //import components
 import Navigation from "./components/navigation/FloatingNavigation";
@@ -14,7 +16,8 @@ import Footer from "./components/footer/Footer";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+            <Provider store={store}>
+
         <div className="App">
           <Navigation />
                     
@@ -28,7 +31,8 @@ class App extends Component {
 
 
         </div>
-      </BrowserRouter>
+        </Provider>
+
     );
   }
 }
