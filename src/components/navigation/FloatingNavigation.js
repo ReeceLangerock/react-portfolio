@@ -11,7 +11,6 @@ class Navigation extends React.Component {
   }
 
   handleBarClick() {
-    console.log("clikced");
     document.getElementById("navigation-bars").classList.toggle("navigation__bars-selected");
     document.getElementById("navigation-menu").classList.toggle("navigation__menu-hidden");
     document.getElementById("navigation-links").classList.toggle("navigation__links-hidden");

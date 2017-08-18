@@ -1,6 +1,9 @@
 import React from "react";
 import VisibilitySensor from "react-visibility-sensor";
 import "./../../style/hero.css";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import { toggleHeroVisible } from "../../actions/actions";
 
 export class Hero extends React.Component {
   constructor(props) {
@@ -11,21 +14,18 @@ export class Hero extends React.Component {
     document.getElementById("text-container").classList.toggle("hero__text-container-visible");
   }
   onChange(isVisible) {
-    // Need to figure out best way to pass this to navigation, might have to resort to setting up redux
+    this.props.toggleHeroVisible(isVisible);
   }
   render() {
     return (
       <VisibilitySensor onChange={this.onChange} partialVisibility={true}>
-
         <div className="hero">
           <div className="hero__text-container" id="text-container">
             <div className="hero__title" id="page-title">
               Reece Langerock
-
             </div>
             <div className="hero__subtitle" id="page-title">
               Front End Developer
-
             </div>
           </div>
         </div>
@@ -33,4 +33,13 @@ export class Hero extends React.Component {
     );
   }
 }
-export default Hero;
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(
+    {
+      toggleHeroVisible
+    },
+    dispatch
+  );
+
+export default connect(null, mapDispatchToProps)(Hero);
