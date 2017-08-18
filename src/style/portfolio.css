@@ -1,5 +1,8 @@
 .portfolio__container {
 background-color: #5BC0EB;
+display: flex;
+align-items: center;
+height: 100vh;
 }
 
 .portfolio__item {
@@ -23,17 +26,23 @@ background-color: #5BC0EB;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .portfolio__item-info {
-  opacity: 0;;
+  opacity: 0;
 position: absolute;
   background-color: black;
   width: 250px;
   height: 250px;
   transition: opacity 1s;
+  
+  
+}
 
+.portfolio__item-container-blocked {
+
+  pointer-events: none; 
+  
 }
 
 
