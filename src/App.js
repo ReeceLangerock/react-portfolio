@@ -3,7 +3,6 @@ import "./App.css";
 import { Provider } from "react-redux";
 import store, { history } from "./store/store";
 
-
 //import components
 import Navigation from "./components/navigation/FloatingNavigation";
 import Hero from "./components/hero/Hero";
@@ -16,23 +15,18 @@ import Footer from "./components/footer/Footer";
 class App extends Component {
   render() {
     return (
-            <Provider store={store}>
-
+      <Provider store={store}>
         <div className="App">
           <Navigation />
-                    
+
           <Hero />
           <About />
           <Skills />
           <Portfolio />
           <Contact />
           <Footer />
-
-
-
         </div>
-        </Provider>
-
+      </Provider>
     );
   }
 }
