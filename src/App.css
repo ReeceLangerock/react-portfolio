@@ -22,3 +22,18 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+@media (max-width: 600px) {
+.container {
+margin: 0px;
+padding: 0px 25px 0px 25px;
+}
+}
+ 
+/* body { margin: 30px; } */
+/*  Add some margin to the body to add space and 
+see where your offending elements cross the line */
+
+/* body * { border: 1px solid red; } */
+ /* add a border to all other elements on the page    */
