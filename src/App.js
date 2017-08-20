@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Provider } from "react-redux";
-import store, { history } from "./store/store";
+import store from "./store/store";
 
 //import components
 import Navigation from "./components/navigation/FloatingNavigation";
