@@ -25,18 +25,16 @@ export class PortfolioItem extends React.Component {
   }
   render() {
     return (
-  
-        <div  id={`portfolio-item-${this.props.itemName}`} className="portfolio__item" onClick={this.togglePopup}>
-          <img alt = {this.props.itemName} src={require(`./../../assets/projectImages/${this.props.itemName}.png`)} />
-          <div className="portfolio__item-info">
-            <h2>
-              {this.props.itemName}
-            </h2>
+      <div id={`portfolio-item-${this.props.itemName}`} className="portfolio__item" onClick={this.togglePopup}>
+        <img className="portfolio__item-cover" alt={this.props.itemName} src={require(`./../../assets/projectImages/${this.props.itemName}.png`)} />
+        <div className="portfolio__item-info">
+          <h2>
+            {this.props.itemName}
+          </h2>
 
-            {this.renderBuiltWith()}
-          </div>
+          {this.renderBuiltWith()}
         </div>
-    
+      </div>
     );
   }
 }

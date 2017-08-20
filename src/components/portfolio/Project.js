@@ -59,13 +59,13 @@ export class Project extends React.Component {
               <ul>
               {this.renderBuiltWith()}
         </ul>
-              <h4>
-                <a href={projectData[key].link}>Visit the Site</a>
-              </h4>
+              <h3>
+                <a href={projectData[key].link} rel="noopener noreferrer" target="_blank">Visit the Site</a>
+              </h3>
 
-              <h4>
-                <a href={projectData[key].github}>Visit the Repo</a>
-              </h4>
+              <h3>
+                <a href={projectData[key].github} rel="noopener noreferrer" target="_blank">Visit the Repo</a>
+              </h3>
             </div>}
         </div>
       </div>
