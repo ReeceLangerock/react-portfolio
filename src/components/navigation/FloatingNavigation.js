@@ -1,6 +1,8 @@
 import React from "react";
-import ContactItem from './../contact/ContactItem'
-import "./../../style/contact.css"
+import ContactItem from "./../contact/ContactItem";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import "./../../style/contact.css";
 import "./../../style/floating-navigation.css";
 
 class Navigation extends React.Component {
@@ -21,16 +23,28 @@ class Navigation extends React.Component {
   }
 
   render() {
+    let logoStyle = this.props.heroVisible === false ? "navigation__logo navigation__logo-visible" : " navigation__logo";
+    let contactStyle = this.props.heroVisible === false ? "navigation__contact navigation__contact-visible" : " navigation__contact";
     return (
       <header>
         <div className="navigation">
           <div className="navigation__container">
-            <div className="navigation__menu" id="navigation-menu" onClick={this.handleBarClick}>Menu</div>
+            <div className="navigation__menu" id="navigation-menu" onClick={this.handleBarClick}>
+              Menu
+            </div>
             <ul className="navigation__links navigation__links-hidden" id="navigation-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
 
             <div className="navigation__bars" onClick={this.handleBarClick} id="navigation-bars">
@@ -38,21 +52,24 @@ class Navigation extends React.Component {
             </div>
           </div>
         </div>
-        <div className="logo" id="logo" onClick={this.scrollToTop}>
-
+        <div className={logoStyle} id="logo" onClick={this.scrollToTop}>
           RL
         </div>
 
-        <div className="contact" id="contact">
-
-          <ContactItem svgName = "linkedin" urlLink = "https://www.linkedin.com/in/reece-langerock/"/>
-          <ContactItem svgName = "email" urlLink = "mailto:reecelangerock@gmail.com"/>
-          <ContactItem svgName = "github" urlLink = "https://github.com/ReeceLangerock"/>
-
+        <div className={contactStyle} id="contact">
+          <ContactItem svgName="linkedin" urlLink="https://www.linkedin.com/in/reece-langerock/" />
+          <ContactItem svgName="email" urlLink="mailto:reecelangerock@gmail.com" />
+          <ContactItem svgName="github" urlLink="https://github.com/ReeceLangerock" />
         </div>
       </header>
     );
   }
 }
 
-export default Navigation;
+const mapStateToProps = state => ({
+  heroVisible: state.componentVisibilityReducer.heroVisible
+});
+
+const mapDispatchToProps = dispatch => bindActionCreators({}, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navigation);
