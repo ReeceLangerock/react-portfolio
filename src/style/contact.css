@@ -1,19 +1,87 @@
-.contact__icon-container {
+.contact__container {
   display: flex;
-    justify-content: center;
+  justify-content: center;
 
+  background-image: url("./../assets/images/contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  border-top: 2px solid;
+  z-index: 1;
 }
-.contact__icon {
-  margin:5px;
+
+.contact__form-container {
+  color: #f2efe9;
+  text-shadow: 2px 2px #323031;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  height: 100%;
+  width: 400px;
+
+  border-radius: 50%;
+
+  justify-content: center;
+}
+
+.contact__form-container input {
+  margin: 5px 0px 5px 0px;
+  opacity: .7;
+  width: 80%;
+  color: #323031;
+}
+
+.contact__form-container input:focus {
+  outline: none !important;
+  border: 1px solid #e95420;
+  box-shadow: 0 0 10px #f5b29b;
+}
+
+.contact__form-container textarea {
+  margin: 5px 0px 5px 0px;
+  width: 80%;
+  opacity: .7;
+  color: #323031;
+}
+
+.contact__form-container textarea:focus {
+  outline: none !important;
+  border: 1px solid #e95420;
+  box-shadow: 0 0 10px #f5b29b;
+}
+
+.contact__form-container input[type=textarea] {
+  height: auto;
+}
+.contact__title {
+  font-size: 4rem;
+}
+
+.contact__form-container form input[type=submit] {
+  border: none;
+  border-radius: 68px;
+  width: 68px;
+  height: 68px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #f2efe9;
+  background: #161616;
   cursor: pointer;
+  font-size: 1.1875em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  -webkit-appearance: none;
+  font-family: "Source Sans Pro";
+  transition: all .75s linear;
+  border: 1px hidden;
 }
 
-.contact__icon > img {
-  width:30px;
-
-}
-
-
-.contact__icon > img:hover {
-  fill: blue;
+.contact__form-container form input[type=submit]:hover {
+  color: #f2efe9;
+  background: #e95420;
+  border: 1px solid #323031;
 }
