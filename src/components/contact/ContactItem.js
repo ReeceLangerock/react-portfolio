@@ -20,8 +20,8 @@ handleIconClick(link) {
     return (
 
         <div className="contact__icon">
+          <i className={`fa fa-${this.props.iconName}`} aria-hidden="false" onClick = {()=>this.handleIconClick(this.props.urlLink)}></i>
          
-          <img alt={this.props.svgName} src = {require(`./../../assets/contact-icons/${this.props.svgName}.svg`)} onClick = {()=>this.handleIconClick(this.props.urlLink)} />
         </div>
 
     );

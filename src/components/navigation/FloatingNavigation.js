@@ -1,15 +1,18 @@
+
 import React from "react";
 import ContactItem from "./../contact/ContactItem";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+
 import "./../../style/contact.css";
 import "./../../style/floating-navigation.css";
+var smoothScroll = require("smoothscroll");
 
 class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.handleBarClick = this.handleBarClick.bind(this);
-    this.scrollToTop = this.scrollToTop.bind(this);
+    this.scrollToSomewhere = this.scrollToSomewhere.bind(this);
   }
 
   handleBarClick() {
@@ -18,8 +21,9 @@ class Navigation extends React.Component {
     document.getElementById("navigation-links").classList.toggle("navigation__links-hidden");
   }
 
-  scrollToTop() {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  scrollToSomewhere(whereTo) {
+    let destination = document.getElementById(whereTo);
+    smoothScroll(destination,1000)   
   }
 
   render() {
@@ -34,16 +38,16 @@ class Navigation extends React.Component {
             </div>
             <ul className="navigation__links navigation__links-hidden" id="navigation-links">
               <li>
-                <a href="#about">About</a>
+                <a href="#about" onClick={()=>this.scrollToSomewhere('about')}>About</a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <a href="#skills"onClick={()=>this.scrollToSomewhere('skills')}>Skills</a>
               </li>
               <li>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#portfolio"onClick={()=>this.scrollToSomewhere('portfolio')}>Portfolio</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact"onClick={()=>this.scrollToSomewhere('contact')}>Contact</a>
               </li>
             </ul>
 
@@ -52,14 +56,14 @@ class Navigation extends React.Component {
             </div>
           </div>
         </div>
-        <div className={logoStyle} id="logo" onClick={this.scrollToTop}>
+        <div className={logoStyle} id="logo" onClick={()=>this.scrollToSomewhere('hero')}>
           RL
         </div>
 
-        <div className={contactStyle} id="contact">
-          <ContactItem svgName="linkedin" urlLink="https://www.linkedin.com/in/reece-langerock/" />
-          <ContactItem svgName="email" urlLink="mailto:reecelangerock@gmail.com" />
-          <ContactItem svgName="github" urlLink="https://github.com/ReeceLangerock" />
+        <div className={contactStyle}>
+          <ContactItem iconName="linkedin" urlLink="https://www.linkedin.com/in/reece-langerock/" />
+          <ContactItem iconName="envelope" urlLink="mailto:reecelangerock@gmail.com" />
+          <ContactItem iconName="github" urlLink="https://github.com/ReeceLangerock" />
         </div>
       </header>
     );
