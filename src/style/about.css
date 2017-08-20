@@ -3,7 +3,10 @@
   text-align: left;
   background-color: #f2efe9;
   min-height: 60vh;
-  margin: 35px 0px 35px 0px;
+  margin: 30px 0px 30px 0px;
+  align-self: center;
+  align-content: center;
+  align-items: center;
 }
 
 .about__image {
@@ -23,19 +26,65 @@
   font-size: 8rem;
   color: #f5b29b;
   text-shadow: 2px 2px #e95420;
-    line-height: 65px;
-  
+  line-height: 65px;
 }
 
 .about__text-main {
   font-size: 5rem;
-    line-height: 65px;
-  
+  line-height: 65px;
 }
 .about__text-emphasis {
-    line-height: 65px;
+  line-height: 65px;
   color: #f5b29b;
   text-shadow: 2px 2px #e95420;
 
   font-size: 8rem;
+}
+
+.toBottom {
+  cursor: pointer;
+
+  color: #f5b29b;
+  text-shadow: 2px 2px #e95420;
+
+  transition: .75s linear; align-self: center;
+  align-content: center;
+  align-items: center;
+}
+
+.toBottom:hover {
+  cursor: pointer;
+  color: #e95420;
+  text-shadow: 2px 2px #f5b29b;
+  transition: .75s linear;
+}
+
+@media (max-width: 600px) {
+  .about__container {
+    flex-wrap: wrap;
+  }
+
+  .about__image img {
+    width: 100%;
+  }
+
+  .about__text-hi {
+    font-size: 4rem;
+    color: #f5b29b;
+    text-shadow: 2px 2px #e95420;
+    line-height: 35px;
+  }
+
+  .about__text-main {
+
+    font-size: 2.5rem;
+    line-height: 35px;
+  }
+  .about__text-emphasis {
+    line-height: 35px;
+    color: #f5b29b;
+    text-shadow: 2px 2px #e95420;
+
+    font-size: 4rem;
+  }
 }

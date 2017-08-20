@@ -1,13 +1,9 @@
 .skills {
-  margin-bottom: 20px;
-  justify-content: center;
-  background-image: url("./../assets/images/skills.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSI+CjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzI4MjgyOCI+PC9yZWN0Pgo8Y2lyY2xlIGN4PSIzIiBjeT0iNC4zIiByPSIxLjgiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMS44IiBmaWxsPSJibGFjayI+PC9jaXJjbGU+CjxjaXJjbGUgY3g9IjEwLjUiIGN5PSIxMi41IiByPSIxLjgiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIxMC41IiBjeT0iMTEuMyIgcj0iMS44IiBmaWxsPSJibGFjayI+PC9jaXJjbGU+Cjwvc3ZnPg==");
+  padding: 30px 0px 30px 0px;
+  display: block;
+  position: relative;
+  min-height: 70vh;
 }
 
 .skills__icon-container {
@@ -31,7 +27,7 @@
   margin: 20px 20px 20px 2%;
   display: flex;
   text-align: left;
-  color: white;
+  color: #f2efe9;
   align-items: baseline;
 }
 
@@ -53,4 +49,23 @@
 
 .skills__subtitle {
   font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .skills__title {
+    font-size: 3rem;
+    margin-right: 7px;
+  }
+  .skills__subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .skills__title {
+    font-size: 2rem;
+  }
+  .skills__subtitle {
+    font-size: 1rem;
+  }
 }

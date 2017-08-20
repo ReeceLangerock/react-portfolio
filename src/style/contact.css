@@ -14,16 +14,12 @@
 .contact__form-container {
   color: #f2efe9;
   text-shadow: 2px 2px #323031;
-
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-
   height: 100%;
-  width: 400px;
-
+ width: 400px;
   border-radius: 50%;
-
   justify-content: center;
 }
 
@@ -32,6 +28,9 @@
   opacity: .7;
   width: 80%;
   color: #323031;
+  border-width: 1px;
+  padding-left: 2px;
+  
 }
 
 .contact__form-container input:focus {
@@ -45,6 +44,8 @@
   width: 80%;
   opacity: .7;
   color: #323031;
+  padding-left: 2px;
+  
 }
 
 .contact__form-container textarea:focus {
@@ -85,3 +86,10 @@
   background: #e95420;
   border: 1px solid #323031;
 }
+
+@media (max-width: 600px) {
+.contact__form-container {
+  width: 400px;
+}
+}
+
