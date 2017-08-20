@@ -1,39 +1,53 @@
 {
   "Libru": {
     "description": "Resource Sharing",
-    "github": "#",
-    "link": "#",
-    "date-completed": "",
+    "platform": "Fullstack Website",
+    "github": "github",
+    "link": "link",
+    "date-completed": "2017",
     "built-with": ["Expressjs", "MongoDB", "Bootstrap"]
-  }, "Draw-Dash": {
-    "description": "Competitive Drawing",
-    "github": "#",
-    "link": "#",
-    "date-completed": "",
-    "built-with": ["Expressjs", "MongoDB", "React"]
-  }, "Fantasy League Webpage": {
-    "description": "",
-    "github": "#",
-    "link": "#",
-    "date-completed": "",
+  },
+  "Draw-Dash": {
+    "description": "Draw-Dash is a competitive, 1v1 drawing competition. Authenticated users are given a prompt for what to draw and a timer begins to countdown, and the 60 second Draw Dash begins!",
+    "platform": "Fullstack Website",
+    "github": "github",
+    "link": "link",
+    "date-completed": "2017",
+    "built-with": ["React","React-Redux", "Express", "Socket.io", "MongoDB"]
+  },
+  "Fantasy Football Webpage": {
+    "platform": "Desktop Website",
+    "description": "This website was built for a long-running fantasy football league that I am a member of. ",
+    "github": "github",
+    "link": "link",
+    "date-completed": "2017",
+    "built-with": ["React", "Redux", "Create-React-App", "D3", "Victory" ]
+  },
+  "Voting Application": {
+    "platform": "Desktop Website",
+
+    "description": "This was built as a part of the FreeCodeCamp backend certification course. The goal was to build a full stack JavaScript app that is functionally similar to this: https://fcc-voting-arthow4n.herokuapp.com/ and deploy it to Heroku.",
+    "github": "github",
+    "link": "link",
+    "date-completed": "2016",
+    "built-with": ["Express", "MongoDB", "EJS", "Chartjs"]
+  },
+  "Pinterest Clone": {
+    "platform": "Desktop Website",
+
+    "description": "2016",
+    "github": "github",
+    "link": "link",
+    "date-completed": "2016",
     "built-with": ["React", "Redux", "D3"]
-  }, "Voting Application": {
-    "description": "",
-    "github": "#",
-    "link": "#",
-    "date-completed": "",
-    "built-with": ["React", "Redux", "D3"]
-  }, "Pinterest Clone": {
-    "description": "",
-    "github": "#",
-    "link": "#",
-    "date-completed": "",
-    "built-with": ["React", "Redux", "D3"]
-  }, "Book Trading App": {
-    "description": "",
-    "github": "#",
-    "link": "#",
-    "date-completed": "",
+  },
+  "Bookster": {
+    "platform": "Desktop Website",
+
+    "description": "Book Trading App",
+    "github": "github",
+    "link": "link",
+    "date-completed": "2016",
     "built-with": ["React", "Redux", "D3"]
   }
 }

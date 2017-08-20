@@ -26,8 +26,8 @@ export class Portfolio extends React.Component {
                 <Project  projectName = {this.props.selectedProject}/>
             
             <div className="container">
-              <div className="portfolio__title">
-                <h1>Portfolio</h1>
+              <div className="portfolio__title-container">
+                <span className = 'portfolio__title'>Portfolio </span><span className = 'portfolio__subtitle'>click for more info</span>
               </div>
 
               <div id = "projects-container" className="portfolio__item-container">

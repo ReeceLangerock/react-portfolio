@@ -12,9 +12,9 @@ export class PortfolioItem extends React.Component {
   }
   renderBuiltWith() {
     return this.props.itemInfo["built-with"].map((item, index) =>
-      <h5 key={item + index}>
+      <h4 key={item + index}>
         {item}
-      </h5>
+      </h4>
     );
   }
 
@@ -25,18 +25,18 @@ export class PortfolioItem extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div id={`portfolio-item-${this.props.itemName}`} className="portfolio__item" onClick={this.togglePopup}>
-          <img src={require("./../../assets/images/temp.ico")} />
+  
+        <div  id={`portfolio-item-${this.props.itemName}`} className="portfolio__item" onClick={this.togglePopup}>
+          <img alt = {this.props.itemName} src={require(`./../../assets/projectImages/${this.props.itemName}.png`)} />
           <div className="portfolio__item-info">
-            <h1>
+            <h2>
               {this.props.itemName}
-            </h1>
+            </h2>
 
             {this.renderBuiltWith()}
           </div>
         </div>
-      </div>
+    
     );
   }
 }
