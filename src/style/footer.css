@@ -1,0 +1,39 @@
+.footer__container {
+  position: absolute;
+  width: 100%;
+  margin-top: -50px;
+  font-size: 2.5rem;
+
+  color: #f2efe9;
+}
+
+.footer__container a {
+  color: #f5b29b;
+  text-decoration: none;
+  transition: .55s linear;
+}
+.footer__container a:hover {
+  color: #e95420;
+  transition: .55s linear;
+}
+
+.toTop {
+  cursor: pointer;
+  position: absolute;
+  top: -25px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 3rem;
+  color: #323031;
+  background-color: #f2efe9;
+  border-radius: 50%;
+  border: 1px solid;
+  transition: .75s linear;
+}
+
+.toTop:hover {
+  color: #f2efe9;
+  background: #e95420;
+  border: 1px solid #323031;
+}

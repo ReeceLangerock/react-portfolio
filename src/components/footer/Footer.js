@@ -1,15 +1,24 @@
 import React from "react";
+import "./../../style/footer.css";
 
 export class Footer extends React.Component {
   render() {
     const currentYear = new Date().getFullYear();
 
     return (
-      <div className="test" ref={(input) => { this.textInput = input; }}>
-        <footer>
-          © {currentYear} <a href="http://reecelangerock.com" rel="noopener noreferrer" target="_blank">Reece Langerock</a>
+    
+        <footer className="footer">
+          <div className="footer__container">
+            <div>
+              © {currentYear}{" "}
+              <a href="http://reecelangerock.com" rel="noopener noreferrer" target="_blank">
+                Reece Langerock
+              </a>
+            </div>
+            <div className="toTop"><i className="fa fa-arrow-up" aria-hidden="false"></i></div>
+          </div>
         </footer>
-      </div>
+
     );
   }
 }
