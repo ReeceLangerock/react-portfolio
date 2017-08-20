@@ -21,7 +21,7 @@ handleIconClick(link) {
 
         <div className="contact__icon">
          
-          <img src = {require(`./../../assets/contact-icons/${this.props.svgName}.svg`)} onClick = {()=>this.handleIconClick(this.props.urlLink)} />
+          <img alt={this.props.svgName} src = {require(`./../../assets/contact-icons/${this.props.svgName}.svg`)} onClick = {()=>this.handleIconClick(this.props.urlLink)} />
         </div>
 
     );
