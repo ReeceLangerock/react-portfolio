@@ -19,7 +19,7 @@ export class Hero extends React.Component {
   render() {
     return (
       <VisibilitySensor onChange={this.onChange} partialVisibility={true} offset={{ top: 500 }}>
-        <div className="hero">
+        <div id='hero' className="hero">
           <div className="hero__text-container" id="text-container">
             <div className="hero__title" id="page-title">
               Reece Langerock
