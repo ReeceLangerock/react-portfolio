@@ -3,6 +3,7 @@ import "./../../style/project.css";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { setSelectedProject } from "../../actions/actions";
+import handleClickOutside from "react-onclickoutside";
 import projectData from "./../../data/portfolio.json";
 
 export class Project extends React.Component {
@@ -11,11 +12,15 @@ export class Project extends React.Component {
     this.handleClose = this.handleClose.bind(this);
   }
 
+  handleClickOutside = () => {
+    if (this.props.selectedProject !== "NONE") {
+      document.getElementById("projects-container").classList.toggle("portfolio__item-container-blocked");
+      this.props.setSelectedProject("NONE");
+    }
+  };
+
   handleClose() {
-    console.log("close");
-
     document.getElementById("projects-container").classList.toggle("portfolio__item-container-blocked");
-
     this.props.setSelectedProject("NONE");
   }
   renderBuiltWith() {
@@ -37,7 +42,7 @@ export class Project extends React.Component {
         </div>
         <div className="project__container">
           <div className="project__image">
-            <img alt = "website responsiveness template" src={require("../../assets/test.png")} />
+            <img alt="website responsiveness template" src={require(`../../assets/projectImages/${this.props.projectName}-Preview.png`)} />
           </div>
           {key !== "NONE" &&
             <div className="project__info">
@@ -57,14 +62,18 @@ export class Project extends React.Component {
               </p>
               <h3>Built With:</h3>
               <ul>
-              {this.renderBuiltWith()}
-        </ul>
+                {this.renderBuiltWith()}
+              </ul>
               <h3>
-                <a href={projectData[key].link} rel="noopener noreferrer" target="_blank">Visit the Site</a>
+                <a href={projectData[key].link} rel="noopener noreferrer" target="_blank">
+                  Visit the Site
+                </a>
               </h3>
 
               <h3>
-                <a href={projectData[key].github} rel="noopener noreferrer" target="_blank">Visit the Repo</a>
+                <a href={projectData[key].github} rel="noopener noreferrer" target="_blank">
+                  Visit the Repo
+                </a>
               </h3>
             </div>}
         </div>
@@ -85,4 +94,4 @@ const mapDispatchToProps = dispatch =>
     dispatch
   );
 
-export default connect(mapStateToProps, mapDispatchToProps)(Project);
+export default connect(mapStateToProps, mapDispatchToProps)(handleClickOutside(Project));
