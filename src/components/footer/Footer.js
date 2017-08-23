@@ -3,13 +3,9 @@ import "./../../style/footer.css";
 var smoothScroll = require("smoothscroll");
 
 export class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   scrollToTop() {
-    let top = document.getElementById('hero');
-    smoothScroll(top,1000)
-
+    let top = document.getElementById("hero");
+    smoothScroll(top, 1000);
   }
   render() {
     const currentYear = new Date().getFullYear();

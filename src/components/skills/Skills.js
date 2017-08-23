@@ -20,15 +20,15 @@ export class Skills extends React.Component {
       container3.classList.add("fromLeft");
       container4.classList.add("fromRight");
     } else {
-      container1.classList.remove("fromLeft");
-      container2.classList.remove("fromRight");
-      container3.classList.remove("fromLeft");
-      container4.classList.remove("fromRight");
+      // container1.classList.remove("fromLeft");
+      // container2.classList.remove("fromRight");
+      // container3.classList.remove("fromLeft");
+      // container4.classList.remove("fromRight");
     }
   }
   render() {
     return (
-      <VisibilitySensor onChange={this.onChange} partialVisibility={true} offset={{ top: 100, bottom: 100 }}>
+      <VisibilitySensor onChange={this.onChange} partialVisibility={true} offset={{ bottom: 300 }}>
         <section id="skills">
           <div className="skills">
             <div className="container">
@@ -58,14 +58,18 @@ export class Skills extends React.Component {
                       <SkillsItem skillName="javascript" />
 
                       <SkillsItem skillName="html5" />
-                      <SkillsItem skillName="css3" />
+                      <SkillsItem skillName="css-3" />
+                      <SkillsItem skillName="bootstrap-4" />
                     </div>
                   </div>
                 </div>
 
-                <div className="skills__container-child" ref={input => {
+                <div
+                  className="skills__container-child"
+                  ref={input => {
                     this.container2 = input;
-                  }}>
+                  }}
+                >
                   <i className="fa fa-server skills__container-icon " />
 
                   <div className="skills_subcontainer">
@@ -84,10 +88,13 @@ export class Skills extends React.Component {
                   </div>
                 </div>
 
-                <div className="skills__container-child" ref={input => {
+                <div
+                  className="skills__container-child"
+                  ref={input => {
                     this.container3 = input;
-                  }}>
-                  <i className="fa fa-code skills__container-icon " />
+                  }}
+                >
+                  <i className="fa fa-cogs skills__container-icon " />
 
                   <div className="skills_subcontainer">
                     <div className="skills__container-header">
@@ -96,18 +103,22 @@ export class Skills extends React.Component {
                       </div>
                     </div>
                     <div className="skills_icon-container">
-                      <SkillsItem skillName="heroku" />
                       <SkillsItem skillName="git-icon" />
+
+                      <SkillsItem skillName="heroku" />
                       <SkillsItem skillName="surge" />
-                      <SkillsItem skillName="jest" />
                       <SkillsItem skillName="npm" />
+                      <SkillsItem skillName="jest" />
                     </div>
                   </div>
                 </div>
 
-                <div className="skills__container-child" ref={input => {
+                <div
+                  className="skills__container-child"
+                  ref={input => {
                     this.container4 = input;
-                  }}>
+                  }}
+                >
                   <i className="fa fa-book skills__container-icon " />
 
                   <div className="skills_subcontainer">
@@ -116,11 +127,10 @@ export class Skills extends React.Component {
                         <span>Education </span>
                       </div>
                     </div>
-                    <p>
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </p>
+                    <p>I am, and always will be, a lifelong learner. One of the great struggles and greatest joys of development, is that there's always something new to learn. In addition to the skills listed here, I'm currently learning D3, continuous integration and test driven design with Jest and Enzyme.</p>
+                    <br/>
+                    <p>"I have no special talent. I am only passionately curious"</p>
+                    <p className = 'float-right'> - Albert Einstein</p>
                   </div>
                 </div>
               </div>

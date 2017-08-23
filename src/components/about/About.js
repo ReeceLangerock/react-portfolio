@@ -23,10 +23,9 @@ export class About extends React.Component {
       image.classList.add("about__image-shake");
       text.classList.add("about__text-animate");
     } else {
-      imageContainer.classList.remove("about__image-animate");
-      image.classList.remove("about__image-shake");
-
-      text.classList.remove("about__text-animate");
+      // imageContainer.classList.remove("about__image-animate");
+      // image.classList.remove("about__image-shake");
+      // text.classList.remove("about__text-animate");
     }
   }
   render() {
@@ -48,7 +47,7 @@ export class About extends React.Component {
                   my name is <br />
                 </div>
                 <div className="about__text-emphasis">
-                  <b>reece</b>
+                  reece
                   <br />
                 </div>
                 <div className="about__text-main"> and I'm a chicago based</div>

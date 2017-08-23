@@ -103,7 +103,7 @@
 }
 
 .navigation__logo {
-    font-family: 'blackthorns';
+  font-family: 'Wildwood-Italic';
 
   position: fixed;
   top: 30px;
@@ -182,8 +182,6 @@
   }
 
   .navigation__logo {
-    
-    
     font-size: 2.5rem;
   }
 
