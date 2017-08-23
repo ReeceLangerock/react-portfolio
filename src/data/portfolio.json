@@ -15,7 +15,7 @@
     "date-completed": "2017",
     "built-with": ["React", "React-Redux", "Express", "Socket.io", "MongoDB"]
   },
-  "Fantasy Football Webpage": {
+  "Mansion Men": {
     "platform": "Desktop Website",
     "description": "This website was built for a long-running fantasy football league that I am a member of. It provides visualization of user and league statistical data, tracking of league trophy records, and reference for league rules and previosu draft results ",
     "github": "https://github.com/ReeceLangerock/MMFantasyLeague",

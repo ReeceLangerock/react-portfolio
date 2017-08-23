@@ -103,6 +103,8 @@
 }
 
 .navigation__logo {
+    font-family: 'blackthorns';
+
   position: fixed;
   top: 30px;
   left: -70px;
@@ -180,6 +182,8 @@
   }
 
   .navigation__logo {
+    
+    
     font-size: 2.5rem;
   }
 

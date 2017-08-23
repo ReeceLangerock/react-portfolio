@@ -11,7 +11,9 @@ export class Hero extends React.Component {
     this.onChange = this.onChange.bind(this);
   }
   componentDidMount() {
-    document.getElementById("text-container").classList.toggle("hero__text-container-visible");
+    let hero = this.hero
+
+    hero.classList.toggle("hero__text-container-visible");
   }
   onChange(isVisible) {
     this.props.toggleHeroVisible(isVisible);
@@ -20,7 +22,7 @@ export class Hero extends React.Component {
     return (
       <VisibilitySensor onChange={this.onChange} partialVisibility={true} offset={{ top: 500 }}>
         <div id='hero' className="hero">
-          <div className="hero__text-container" id="text-container">
+          <div className="hero__text-container" id="text-container" ref={(input) => {this.hero = input }}>
             <div className="hero__title" id="page-title">
               Reece Langerock
             </div>
