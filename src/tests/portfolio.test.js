@@ -1,42 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-
-import Portfolio from "./../components/portfolio/Portfolio";
-import { shallow, mount, find } from "enzyme";
 import configureStore from "redux-mock-store";
 
-//*******************************************************************************************************
-describe(">>>PORTFOLIO --- REACT-REDUX (Mount + wrapping in <Provider>)", () => {
-  const initialState = { selectedProject: 'NONE' };
-  const mockStore = configureStore();
-  let store, wrapper;
+import { Portfolio } from "./../components/portfolio/Portfolio";
+import { shallow, mount, find } from "enzyme";
+const initialState = { selectedProject: "test project" };
 
-  beforeEach(() => {
-    store = mockStore(initialState);
-    wrapper = mount(
-      <Provider store={store}>
-        <Portfolio />
-      </Provider>
-    );
-  });
+const mockStore = configureStore();
 
-  
-  it("+++ render the connected(SMART) component", () => {
-    console.log(wrapper)
-    expect(wrapper.find(Portfolio).length).toEqual(1);
-  });
+it("renders without crashing", () => {
+  let store = mockStore(initialState);
 
-  it("+++ check Prop matches with initialState", () => {
-    expect(wrapper.find(Portfolio).prop("selectedProject")).toEqual(initialState.selectedProject);
-  });
-
-  // it('+++ check action on dispatching ', () => {
-  //     let action
-  //     store.dispatch(addInputs(500))
-  //     store.dispatch(subtractInputs(100))
-  //     action = store.getActions()
-  //     expect(action[0].type).toBe("ADD_INPUTS")
-  //     expect(action[1].type).toBe("SUBTRACT_INPUTS")
-  // });
+  shallow(<Portfolio />);
 });
