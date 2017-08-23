@@ -13,6 +13,7 @@ import Skills from "./components/skills/Skills";
 import Footer from "./components/footer/Footer";
 
 class App extends Component {
+
   render() {
     return (
       <Provider store={store}>
