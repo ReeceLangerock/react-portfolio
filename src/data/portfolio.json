@@ -9,14 +9,14 @@
   },
   "Draw-Dash": {
     "description": "Draw-Dash is a competitive, 1v1 drawing competition. Authenticated users are given a prompt for what to draw and a timer begins to countdown, and the 60 second Draw Dash begins!",
-    "platform": "Fullstack Website",
+    "platform": "Fullstack React Application",
     "github": "https://github.com/ReeceLangerock/draw-dash",
     "link": "https://draw-dash.herokuapp.com/",
     "date-completed": "2017",
     "built-with": ["React", "React-Redux", "Express", "Socket.io", "MongoDB"]
   },
   "Mansion Men": {
-    "platform": "Desktop Website",
+    "platform": "React Website",
     "description": "This website was built for a long-running fantasy football league that I am a member of. It provides visualization of user and league statistical data, tracking of league trophy records, and reference for league rules and previosu draft results ",
     "github": "https://github.com/ReeceLangerock/MMFantasyLeague",
     "link": "http://mansion-men.surge.sh/",
@@ -24,7 +24,7 @@
     "built-with": ["React", "Redux", "Create-React-App", "D3", "Victory"]
   },
   "Voting Application": {
-    "platform": "Desktop Website",
+    "platform": "Fullstack Website",
 
     "description": "This was built as a part of the FreeCodeCamp backend certification course. The goal was to build a full stack JavaScript app that is functionally similar to this: https://fcc-voting-arthow4n.herokuapp.com/ and deploy it to Heroku.",
     "github": "https://github.com/ReeceLangerock/voting-app",
@@ -41,8 +41,17 @@
     "date-completed": "2017",
     "built-with": ["Express", "MongoDB", "EJS", "Stormpath", "MasonryJS"]
   },
+  "Nightlife Application": {
+    "platform": "Fullstack Website",
+
+    "description": "This was built as a part of the FreeCodeCamp backend certification course.  Build a full stack JavaScript app that is functionally similar to this: http://whatsgoinontonight.herokuapp.com/ and deploy it to Heroku.",
+    "github": "https://github.com/ReeceLangerock/nightlife-app",
+    "link": "https://nightlife-srl.herokuapp.com/",
+    "date-completed": "2017",
+    "built-with": ["Express", "MongoDB", "EJS", "Yelp API", "oAuth"]
+  },
   "Bookster": {
-    "platform": "Desktop Website",
+    "platform": "Fullstack Website",
     "description": "This was built as a part of the FreeCodeCamp backend certification course. Build a full stack JavaScript app that is functionally similar to this: http://bookjump.herokuapp.com/ and deploy it to Heroku.",
     "github": "https://github.com/ReeceLangerock/bookster",
     "link": "https://bookster-srl.herokuapp.com/",
@@ -50,7 +59,7 @@
     "built-with": ["Express", "MongoDB", "EJS", "AuthO"]
   },
   "Simon Says": {
-    "platform": "Desktop Application",
+    "platform": "Web Application",
     "description": "This was built as a part of the FreeCodeCamp frontend certification course. Build a CodePen.io app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/obYBjE.",
     "github": "https://github.com/ReeceLangerock/SimonSays",
     "link": "https://codepen.io/reecelangerock/pen/YpbNxb",

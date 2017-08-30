@@ -1,33 +1,33 @@
-import React from "react";
-import "./../../style/portfolio.css";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import { setSelectedProject } from "../../actions/actions";
+import React from 'react'
+import './../../style/portfolio.css'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { setSelectedProject } from '../../actions/actions'
 
 export class PortfolioItem extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
 
-    this.togglePopup = this.togglePopup.bind(this);
+    this.togglePopup = this.togglePopup.bind(this)
   }
-  renderBuiltWith() {
-    return this.props.itemInfo["built-with"].map((item, index) =>
+  renderBuiltWith () {
+    return this.props.itemInfo['built-with'].map((item, index) =>
       <h4 key={item + index}>
         {item}
       </h4>
-    );
+    )
   }
 
-  togglePopup() {
-    document.getElementById("projects-container").classList.toggle("portfolio__item-container-blocked");
+  togglePopup () {
+    document.getElementById('projects-container').classList.toggle('portfolio__item-container-blocked')
 
-    this.props.setSelectedProject(this.props.itemName);
+    this.props.setSelectedProject(this.props.itemName)
   }
-  render() {
+  render () {
     return (
-      <div id={`portfolio-item-${this.props.itemName}`} className="portfolio__item" onClick={this.togglePopup}>
-        <img className="portfolio__item-cover" alt={this.props.itemName} src={require(`./../../assets/projectImages/${this.props.itemName}.png`)} />
-        <div className="portfolio__item-info">
+      <div id={`portfolio-item-${this.props.itemName}`} className='portfolio__item' onClick={this.togglePopup}>
+        <img className='portfolio__item-cover' alt={this.props.itemName} src={require(`./../../assets/projectImages/${this.props.itemName}.png`)} />
+        <div className='portfolio__item-info'>
           <h2>
             {this.props.itemName}
           </h2>
@@ -35,12 +35,12 @@ export class PortfolioItem extends React.Component {
           {this.renderBuiltWith()}
         </div>
       </div>
-    );
+    )
   }
 }
 const mapStateToProps = state => ({
   selectedProject: state.portfolioProjectReducer.selectedProject
-});
+})
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators(
@@ -48,6 +48,6 @@ const mapDispatchToProps = dispatch =>
       setSelectedProject
     },
     dispatch
-  );
+  )
 
-export default connect(mapStateToProps, mapDispatchToProps)(PortfolioItem);
+export default connect(mapStateToProps, mapDispatchToProps)(PortfolioItem)
