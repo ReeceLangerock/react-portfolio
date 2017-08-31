@@ -1,6 +1,7 @@
 {
   "Libru": {
-    "description": "Libru is a programming resource library built to allow self-taught developers to find, rate and review resources as well as track what courses, books, guides, etc they have completed, are working on, or want to do.",
+    "description":
+      "Libru is a programming resource library built to allow self-taught developers to find, rate and review resources as well as track what courses, books, guides, etc they have completed, are working on, or want to do.",
     "platform": "Fullstack Website",
     "github": "https://github.com/ReeceLangerock/libru",
     "link": "https://libru1.herokuapp.com/",
@@ -17,16 +18,29 @@
   },
   "Mansion Men": {
     "platform": "React Website",
-    "description": "This website was built for a long-running fantasy football league that I am a member of. It provides visualization of user and league statistical data, tracking of league trophy records, and reference for league rules and previosu draft results ",
+    "description":
+      "This website was built for a long-running fantasy football league that I am a member of. It provides visualization of user and league statistical data, tracking of league trophy records, and reference for league rules and previosu draft results ",
     "github": "https://github.com/ReeceLangerock/MMFantasyLeague",
     "link": "http://mansion-men.surge.sh/",
     "date-completed": "2017",
     "built-with": ["React", "Redux", "Create-React-App", "D3", "Victory"]
   },
+  "Markdown Previewer": {
+    "platform": "React Application",
+    "description": "This was built as a part of the FreeCodeCamp data visualization certification course. The goal was to build a React application that is functionally similar to",
+    "descriptionEnd": "",
+    "descriptionLink": "https://codepen.io/freeCodeCamp/full/JXrLLE.",
+    "github": "https://github.com/ReeceLangerock/markdown-previewer",
+    "link": "http://markdown-rl.surge.sh/",
+    "date-completed": "2017",
+    "built-with": ["React", "Redux", "Create-React-App", "Remarkable"]
+  },
   "Voting Application": {
     "platform": "Fullstack Website",
 
-    "description": "This was built as a part of the FreeCodeCamp backend certification course. The goal was to build a full stack JavaScript app that is functionally similar to this: https://fcc-voting-arthow4n.herokuapp.com/ and deploy it to Heroku.",
+    "description": "This was built as a part of the FreeCodeCamp backend certification course. The goal was to build full stack Javascript application that is functionally similar to",
+    "descriptionEnd": "and deploy it to Heroku.",
+    "descriptionLink": "https://fcc-voting-arthow4n.herokuapp.com/",
     "github": "https://github.com/ReeceLangerock/voting-app",
     "link": "https://voting-app-srl.herokuapp.com/",
     "date-completed": "2017",
@@ -35,7 +49,9 @@
   "Pinterest Clone": {
     "platform": "Desktop Website",
 
-    "description": "This was built as a part of the FreeCodeCamp backend certification course.  Build a full stack JavaScript app that is functionally similar to this: https://midnight-dust.hyperdev.space and deploy it to Heroku.",
+    "description": "This was built as a part of the FreeCodeCamp backend certification course.  Build a full stack JavaScript application that is functionally similar to",
+    "descriptionEnd": " and deploy it to Heroku.",
+    "descriptionLink": "https://midnight-dust.hyperdev.space",
     "github": "https://github.com/ReeceLangerock/Pinterest-Clone",
     "link": "https://pinterest-clone-srl.herokuapp.com/",
     "date-completed": "2017",
@@ -44,7 +60,9 @@
   "Nightlife Application": {
     "platform": "Fullstack Website",
 
-    "description": "This was built as a part of the FreeCodeCamp backend certification course.  Build a full stack JavaScript app that is functionally similar to this: http://whatsgoinontonight.herokuapp.com/ and deploy it to Heroku.",
+    "description": "This was built as a part of the FreeCodeCamp backend certification course.  Build a full stack JavaScript application that is functionally similar to",
+    "descriptionEnd": "and deploy it to Heroku.",
+    "descriptionLink": "http://whatsgoinontonight.herokuapp.com/",
     "github": "https://github.com/ReeceLangerock/nightlife-app",
     "link": "https://nightlife-srl.herokuapp.com/",
     "date-completed": "2017",
@@ -52,7 +70,9 @@
   },
   "Bookster": {
     "platform": "Fullstack Website",
-    "description": "This was built as a part of the FreeCodeCamp backend certification course. Build a full stack JavaScript app that is functionally similar to this: http://bookjump.herokuapp.com/ and deploy it to Heroku.",
+    "description": "This was built as a part of the FreeCodeCamp backend certification course. Build a full stack JavaScript application that is functionally similar to this",
+    "descriptionEnd": "and deploy it to Heroku.",
+    "descriptionLink": "http://bookjump.herokuapp.com/",
     "github": "https://github.com/ReeceLangerock/bookster",
     "link": "https://bookster-srl.herokuapp.com/",
     "date-completed": "2017",
@@ -60,7 +80,9 @@
   },
   "Simon Says": {
     "platform": "Web Application",
-    "description": "This was built as a part of the FreeCodeCamp frontend certification course. Build a CodePen.io app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/obYBjE.",
+    "description": "This was built as a part of the FreeCodeCamp frontend certification course. Build a CodePen.io application that is functionally similar to this: ",
+    "descriptionEnd": "",
+    "descriptionLink": "https://codepen.io/FreeCodeCamp/full/obYBjE.",
     "github": "https://github.com/ReeceLangerock/SimonSays",
     "link": "https://codepen.io/reecelangerock/pen/YpbNxb",
     "date-completed": "2016",
