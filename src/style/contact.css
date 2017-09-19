@@ -62,7 +62,7 @@
 }
 
 .contact__form-container form input[type=submit] {
-  border: none;
+  border: 1px solid rgba(242,239,233,.25);
   border-radius: 68px;
   width: 68px;
   height: 68px;
@@ -78,7 +78,7 @@
   -webkit-appearance: none;
   font-family: "Source Sans Pro";
   transition: all .75s linear;
-  border: 1px hidden;
+ 
 }
 
 .contact__form-container form input[type=submit]:hover {
