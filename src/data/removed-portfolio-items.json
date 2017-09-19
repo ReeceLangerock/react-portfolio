@@ -17,33 +17,13 @@
     "built-with": ["React", "React-Redux", "Express", "Socket.io", "MongoDB"]
   },
   "Mansion Men": {
-    "platform": "React Application",
+    "platform": "React Website",
     "description":
       "This website was built for a long-running fantasy football league that I am a member of. It provides visualization of user and league statistical data, tracking of league trophy records, and reference for league rules and previosu draft results ",
     "github": "https://github.com/ReeceLangerock/MMFantasyLeague",
     "link": "http://mansion-men.surge.sh/",
     "date-completed": "2017",
     "built-with": ["React", "Redux", "Create-React-App", "D3", "Victory"]
-  },
-  "Recipe Box": {
-    "platform": "React Application",
-    "description": "This was built as a part of the FreeCodeCamp data visualization certification course. The goal was to build a React application that is functionally similar to",
-    "descriptionEnd": "",
-    "descriptionLink": "https://codepen.io/FreeCodeCamp/full/xVXWag/",
-    "github": "https://github.com/ReeceLangerock/recipe-box",
-    "link": "http://recipe-box-rl.surge.sh/",
-    "date-completed": "2017",
-    "built-with": ["React", "Redux", "Create-React-App", "Styled-Components", "Jest", "Travis CI"]
-  },
-  "Game of Life": {
-    "platform": "React Application",
-    "description": "This was built as a part of the FreeCodeCamp data visualization certification course. The goal was to build a React application that is functionally similar to",
-    "descriptionEnd": "",
-    "descriptionLink": "https://codepen.io/FreeCodeCamp/full/reGdqx/.",
-    "github": "https://github.com/ReeceLangerock/game-of-life",
-    "link": "http://game-of-life-rl.surge.sh/",
-    "date-completed": "2017",
-    "built-with": ["React", "Create-React-App", "Styled-Components", "Jest", "Travis CI"]
   },
   "Markdown Previewer": {
     "platform": "React Application",
@@ -53,7 +33,7 @@
     "github": "https://github.com/ReeceLangerock/markdown-previewer",
     "link": "http://markdown-rl.surge.sh/",
     "date-completed": "2017",
-    "built-with": ["React", "Redux","Create-React-App", "Styled-Components", "Jest", "Travis CI"]
+    "built-with": ["React", "Redux", "Create-React-App", "Remarkable"]
   },
   "Voting Application": {
     "platform": "Fullstack Website",
@@ -65,7 +45,7 @@
     "link": "https://voting-app-srl.herokuapp.com/",
     "date-completed": "2017",
     "built-with": ["Express", "MongoDB", "EJS", "Chartjs"]
-  },
+  }
   "Nightlife Application": {
     "platform": "Fullstack Website",
 
@@ -87,4 +67,30 @@
     "date-completed": "2017",
     "built-with": ["Express", "MongoDB", "EJS", "AuthO"]
   }
+ 
 }
+
+
+// "Simon Says": {
+//   "platform": "Web Application",
+//   "description": "This was built as a part of the FreeCodeCamp frontend certification course. Build a CodePen.io application that is functionally similar to this: ",
+//   "descriptionEnd": "",
+//   "descriptionLink": "https://codepen.io/FreeCodeCamp/full/obYBjE.",
+//   "github": "https://github.com/ReeceLangerock/SimonSays",
+//   "link": "https://codepen.io/reecelangerock/pen/YpbNxb",
+//   "date-completed": "2016",
+//   "built-with": ["HTML", "CSS", "jQuery"]
+// }
+
+
+// "Pinterest Clone": {
+//   "platform": "Desktop Website",
+
+//   "description": "This was built as a part of the FreeCodeCamp backend certification course.  Build a full stack JavaScript application that is functionally similar to",
+//   "descriptionEnd": " and deploy it to Heroku.",
+//   "descriptionLink": "https://midnight-dust.hyperdev.space",
+//   "github": "https://github.com/ReeceLangerock/Pinterest-Clone",
+//   "link": "https://pinterest-clone-srl.herokuapp.com/",
+//   "date-completed": "2017",
+//   "built-with": ["Express", "MongoDB", "EJS", "Stormpath", "MasonryJS"]
+// }
